@@ -4,7 +4,6 @@
 
 ## Screenshots
 
-<img src="Image/UI.png" width="300">
 <img src="Image/Widget.png" width="300">
 
 ## Features
