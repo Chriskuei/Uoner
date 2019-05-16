@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8326D2DC1E933A0F00467190 /* BonerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2DB1E933A0F00467190 /* BonerNetwork.swift */; };
+		8326D2E21E9377D300467190 /* BonerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2E11E9377D300467190 /* BonerConfig.swift */; };
+		8326D2E51E93784500467190 /* BonerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2E41E93784500467190 /* BonerUserDefaults.swift */; };
+		8326D2E81E937B2300467190 /* BonerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2E41E93784500467190 /* BonerUserDefaults.swift */; };
+		8326D2E91E937B2300467190 /* BonerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2E11E9377D300467190 /* BonerConfig.swift */; };
+		8326D2EC1E9386EF00467190 /* BonerFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2EB1E9386EF00467190 /* BonerFormat.swift */; };
+		8326D2EE1E93882500467190 /* Double+Boner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2ED1E93882500467190 /* Double+Boner.swift */; };
+		8326D2F01E9389D300467190 /* BonerFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2EB1E9386EF00467190 /* BonerFormat.swift */; };
+		8326D2F11E938A3500467190 /* Double+Boner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326D2ED1E93882500467190 /* Double+Boner.swift */; };
+		834DC428228D8B36005C5A69 /* UCAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DC427228D8B36005C5A69 /* UCAS.swift */; };
+		834DC42D228D8E30005C5A69 /* String+Boner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DC429228D8D39005C5A69 /* String+Boner.swift */; };
+		834DC42E228D8E42005C5A69 /* BonerRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DC42B228D8D5E005C5A69 /* BonerRSA.swift */; };
+		83B49A221E9297A5000077C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B49A211E9297A5000077C0 /* AppDelegate.swift */; };
+		83B49A241E9297A5000077C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B49A231E9297A5000077C0 /* ViewController.swift */; };
+		83B49A271E9297A5000077C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B49A251E9297A5000077C0 /* Main.storyboard */; };
+		83B49A291E9297A5000077C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B49A281E9297A5000077C0 /* Assets.xcassets */; };
+		83B49A2C1E9297A5000077C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B49A2A1E9297A5000077C0 /* LaunchScreen.storyboard */; };
+		83B49A371E9297A6000077C0 /* BonerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B49A361E9297A6000077C0 /* BonerTests.swift */; };
+		83B49A421E9297A6000077C0 /* BonerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B49A411E9297A6000077C0 /* BonerUITests.swift */; };
+		83B49A561E9298CA000077C0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B49A551E9298CA000077C0 /* NotificationCenter.framework */; };
+		83B49A591E9298CA000077C0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B49A581E9298CA000077C0 /* TodayViewController.swift */; };
+		83B49A5C1E9298CA000077C0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B49A5A1E9298CA000077C0 /* MainInterface.storyboard */; };
+		83B49A601E9298CA000077C0 /* Uoner Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83B49A531E9298CA000077C0 /* Uoner Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83B49A661E929C32000077C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B49A651E929C32000077C0 /* Alamofire.framework */; };
+		83B49AAA1E93320A000077C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B49A651E929C32000077C0 /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83B49A331E9297A6000077C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B49A161E9297A5000077C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B49A1D1E9297A5000077C0;
+			remoteInfo = Boner;
+		};
+		83B49A3E1E9297A6000077C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B49A161E9297A5000077C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B49A1D1E9297A5000077C0;
+			remoteInfo = Boner;
+		};
+		83B49A5E1E9298CA000077C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B49A161E9297A5000077C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B49A521E9298CA000077C0;
+			remoteInfo = "Boner Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83B49A641E9298CA000077C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83B49A601E9298CA000077C0 /* Uoner Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8326D2DB1E933A0F00467190 /* BonerNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BonerNetwork.swift; path = "Boner Widget/BonerNetwork.swift"; sourceTree = SOURCE_ROOT; };
+		8326D2DF1E9376C500467190 /* Boner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Boner.entitlements; sourceTree = "<group>"; };
+		8326D2E01E93771700467190 /* Boner Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Boner Widget.entitlements"; sourceTree = "<group>"; };
+		8326D2E11E9377D300467190 /* BonerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonerConfig.swift; sourceTree = "<group>"; };
+		8326D2E41E93784500467190 /* BonerUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonerUserDefaults.swift; sourceTree = "<group>"; };
+		8326D2EB1E9386EF00467190 /* BonerFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonerFormat.swift; sourceTree = "<group>"; };
+		8326D2ED1E93882500467190 /* Double+Boner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Boner.swift"; sourceTree = "<group>"; };
+		834DC427228D8B36005C5A69 /* UCAS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCAS.swift; sourceTree = "<group>"; };
+		834DC429228D8D39005C5A69 /* String+Boner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Boner.swift"; sourceTree = "<group>"; };
+		834DC42B228D8D5E005C5A69 /* BonerRSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonerRSA.swift; sourceTree = "<group>"; };
+		83B49A1E1E9297A5000077C0 /* Uoner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uoner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B49A211E9297A5000077C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83B49A231E9297A5000077C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83B49A261E9297A5000077C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83B49A281E9297A5000077C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B49A2B1E9297A5000077C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83B49A2D1E9297A5000077C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B49A321E9297A6000077C0 /* UonerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UonerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B49A361E9297A6000077C0 /* BonerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonerTests.swift; sourceTree = "<group>"; };
+		83B49A381E9297A6000077C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B49A3D1E9297A6000077C0 /* UonerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UonerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B49A411E9297A6000077C0 /* BonerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonerUITests.swift; sourceTree = "<group>"; };
+		83B49A431E9297A6000077C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B49A531E9298CA000077C0 /* Uoner Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Uoner Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B49A551E9298CA000077C0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		83B49A581E9298CA000077C0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		83B49A5B1E9298CA000077C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		83B49A5D1E9298CA000077C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B49A651E929C32000077C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83B49A1B1E9297A5000077C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B49A661E929C32000077C0 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A2F1E9297A6000077C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A3A1E9297A6000077C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A501E9298CA000077C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B49AAA1E93320A000077C0 /* Alamofire.framework in Frameworks */,
+				83B49A561E9298CA000077C0 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8326D2E31E9377F600467190 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				8326D2E11E9377D300467190 /* BonerConfig.swift */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		8326D2E71E93785700467190 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8326D2EB1E9386EF00467190 /* BonerFormat.swift */,
+				8326D2E41E93784500467190 /* BonerUserDefaults.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		8326D2EA1E937C2700467190 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8326D2DB1E933A0F00467190 /* BonerNetwork.swift */,
+				834DC427228D8B36005C5A69 /* UCAS.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8326D2EF1E93882B00467190 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8326D2ED1E93882500467190 /* Double+Boner.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		83B49A151E9297A5000077C0 = {
+			isa = PBXGroup;
+			children = (
+				83B49A201E9297A5000077C0 /* Boner */,
+				83B49A571E9298CA000077C0 /* Boner Widget */,
+				83B49A351E9297A6000077C0 /* BonerTests */,
+				83B49A401E9297A6000077C0 /* BonerUITests */,
+				83B49A6B1E929D0A000077C0 /* Supporting Files */,
+				83B49A541E9298CA000077C0 /* Frameworks */,
+				83B49A1F1E9297A5000077C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83B49A1F1E9297A5000077C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B49A1E1E9297A5000077C0 /* Uoner.app */,
+				83B49A321E9297A6000077C0 /* UonerTests.xctest */,
+				83B49A3D1E9297A6000077C0 /* UonerUITests.xctest */,
+				83B49A531E9298CA000077C0 /* Uoner Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83B49A201E9297A5000077C0 /* Boner */ = {
+			isa = PBXGroup;
+			children = (
+				8326D2DF1E9376C500467190 /* Boner.entitlements */,
+				83B49A211E9297A5000077C0 /* AppDelegate.swift */,
+				8326D2E71E93785700467190 /* Helpers */,
+				8326D2E31E9377F600467190 /* Configs */,
+				8326D2EA1E937C2700467190 /* Services */,
+				8326D2EF1E93882B00467190 /* Extensions */,
+				83B49A691E929CCC000077C0 /* ViewControllers */,
+				83B49A281E9297A5000077C0 /* Assets.xcassets */,
+			);
+			path = Boner;
+			sourceTree = "<group>";
+		};
+		83B49A351E9297A6000077C0 /* BonerTests */ = {
+			isa = PBXGroup;
+			children = (
+				83B49A361E9297A6000077C0 /* BonerTests.swift */,
+				83B49A381E9297A6000077C0 /* Info.plist */,
+			);
+			path = BonerTests;
+			sourceTree = "<group>";
+		};
+		83B49A401E9297A6000077C0 /* BonerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83B49A411E9297A6000077C0 /* BonerUITests.swift */,
+				83B49A431E9297A6000077C0 /* Info.plist */,
+			);
+			path = BonerUITests;
+			sourceTree = "<group>";
+		};
+		83B49A541E9298CA000077C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83B49A651E929C32000077C0 /* Alamofire.framework */,
+				83B49A551E9298CA000077C0 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83B49A571E9298CA000077C0 /* Boner Widget */ = {
+			isa = PBXGroup;
+			children = (
+				834DC42B228D8D5E005C5A69 /* BonerRSA.swift */,
+				834DC429228D8D39005C5A69 /* String+Boner.swift */,
+				8326D2E01E93771700467190 /* Boner Widget.entitlements */,
+				83B49A581E9298CA000077C0 /* TodayViewController.swift */,
+				83B49A5A1E9298CA000077C0 /* MainInterface.storyboard */,
+				83B49A5D1E9298CA000077C0 /* Info.plist */,
+			);
+			path = "Boner Widget";
+			sourceTree = "<group>";
+		};
+		83B49A691E929CCC000077C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83B49A231E9297A5000077C0 /* ViewController.swift */,
+				83B49A6A1E929CE6000077C0 /* Storyboard */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83B49A6A1E929CE6000077C0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				83B49A2A1E9297A5000077C0 /* LaunchScreen.storyboard */,
+				83B49A251E9297A5000077C0 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		83B49A6B1E929D0A000077C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83B49A2D1E9297A5000077C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = Boner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83B49A1D1E9297A5000077C0 /* Uoner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B49A461E9297A6000077C0 /* Build configuration list for PBXNativeTarget "Uoner" */;
+			buildPhases = (
+				83B49A1A1E9297A5000077C0 /* Sources */,
+				83B49A1B1E9297A5000077C0 /* Frameworks */,
+				83B49A1C1E9297A5000077C0 /* Resources */,
+				83B49A641E9298CA000077C0 /* Embed App Extensions */,
+				83B49A671E929C4D000077C0 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B49A5F1E9298CA000077C0 /* PBXTargetDependency */,
+			);
+			name = Uoner;
+			productName = Boner;
+			productReference = 83B49A1E1E9297A5000077C0 /* Uoner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83B49A311E9297A6000077C0 /* UonerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B49A491E9297A6000077C0 /* Build configuration list for PBXNativeTarget "UonerTests" */;
+			buildPhases = (
+				83B49A2E1E9297A6000077C0 /* Sources */,
+				83B49A2F1E9297A6000077C0 /* Frameworks */,
+				83B49A301E9297A6000077C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B49A341E9297A6000077C0 /* PBXTargetDependency */,
+			);
+			name = UonerTests;
+			productName = BonerTests;
+			productReference = 83B49A321E9297A6000077C0 /* UonerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83B49A3C1E9297A6000077C0 /* UonerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B49A4C1E9297A6000077C0 /* Build configuration list for PBXNativeTarget "UonerUITests" */;
+			buildPhases = (
+				83B49A391E9297A6000077C0 /* Sources */,
+				83B49A3A1E9297A6000077C0 /* Frameworks */,
+				83B49A3B1E9297A6000077C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B49A3F1E9297A6000077C0 /* PBXTargetDependency */,
+			);
+			name = UonerUITests;
+			productName = BonerUITests;
+			productReference = 83B49A3D1E9297A6000077C0 /* UonerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		83B49A521E9298CA000077C0 /* Uoner Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B49A611E9298CA000077C0 /* Build configuration list for PBXNativeTarget "Uoner Widget" */;
+			buildPhases = (
+				83B49A4F1E9298CA000077C0 /* Sources */,
+				83B49A501E9298CA000077C0 /* Frameworks */,
+				83B49A511E9298CA000077C0 /* Resources */,
+				83B49AAB1E933227000077C0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Uoner Widget";
+			productName = "Boner Widget";
+			productReference = 83B49A531E9298CA000077C0 /* Uoner Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83B49A161E9297A5000077C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Chris;
+				TargetAttributes = {
+					83B49A1D1E9297A5000077C0 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RP63UHZLK9;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					83B49A311E9297A6000077C0 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RP63UHZLK9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83B49A1D1E9297A5000077C0;
+					};
+					83B49A3C1E9297A6000077C0 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RP63UHZLK9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83B49A1D1E9297A5000077C0;
+					};
+					83B49A521E9298CA000077C0 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = RP63UHZLK9;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 83B49A191E9297A5000077C0 /* Build configuration list for PBXProject "Uoner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83B49A151E9297A5000077C0;
+			productRefGroup = 83B49A1F1E9297A5000077C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83B49A1D1E9297A5000077C0 /* Uoner */,
+				83B49A311E9297A6000077C0 /* UonerTests */,
+				83B49A3C1E9297A6000077C0 /* UonerUITests */,
+				83B49A521E9298CA000077C0 /* Uoner Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83B49A1C1E9297A5000077C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B49A2C1E9297A5000077C0 /* LaunchScreen.storyboard in Resources */,
+				83B49A291E9297A5000077C0 /* Assets.xcassets in Resources */,
+				83B49A271E9297A5000077C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A301E9297A6000077C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A3B1E9297A6000077C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A511E9298CA000077C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B49A5C1E9298CA000077C0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83B49A671E929C4D000077C0 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		83B49AAB1E933227000077C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83B49A1A1E9297A5000077C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8326D2EE1E93882500467190 /* Double+Boner.swift in Sources */,
+				83B49A241E9297A5000077C0 /* ViewController.swift in Sources */,
+				83B49A221E9297A5000077C0 /* AppDelegate.swift in Sources */,
+				8326D2EC1E9386EF00467190 /* BonerFormat.swift in Sources */,
+				8326D2E51E93784500467190 /* BonerUserDefaults.swift in Sources */,
+				834DC428228D8B36005C5A69 /* UCAS.swift in Sources */,
+				8326D2E21E9377D300467190 /* BonerConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A2E1E9297A6000077C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B49A371E9297A6000077C0 /* BonerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A391E9297A6000077C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B49A421E9297A6000077C0 /* BonerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B49A4F1E9298CA000077C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8326D2F11E938A3500467190 /* Double+Boner.swift in Sources */,
+				8326D2F01E9389D300467190 /* BonerFormat.swift in Sources */,
+				8326D2E81E937B2300467190 /* BonerUserDefaults.swift in Sources */,
+				8326D2E91E937B2300467190 /* BonerConfig.swift in Sources */,
+				8326D2DC1E933A0F00467190 /* BonerNetwork.swift in Sources */,
+				834DC42E228D8E42005C5A69 /* BonerRSA.swift in Sources */,
+				83B49A591E9298CA000077C0 /* TodayViewController.swift in Sources */,
+				834DC42D228D8E30005C5A69 /* String+Boner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83B49A341E9297A6000077C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B49A1D1E9297A5000077C0 /* Uoner */;
+			targetProxy = 83B49A331E9297A6000077C0 /* PBXContainerItemProxy */;
+		};
+		83B49A3F1E9297A6000077C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B49A1D1E9297A5000077C0 /* Uoner */;
+			targetProxy = 83B49A3E1E9297A6000077C0 /* PBXContainerItemProxy */;
+		};
+		83B49A5F1E9298CA000077C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B49A521E9298CA000077C0 /* Uoner Widget */;
+			targetProxy = 83B49A5E1E9298CA000077C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83B49A251E9297A5000077C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B49A261E9297A5000077C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83B49A2A1E9297A5000077C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B49A2B1E9297A5000077C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		83B49A5A1E9298CA000077C0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B49A5B1E9298CA000077C0 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83B49A441E9297A6000077C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83B49A451E9297A6000077C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83B49A471E9297A6000077C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Boner/Boner.entitlements;
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chriskuei.Boner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83B49A481E9297A6000077C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Boner/Boner.entitlements;
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Boner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chriskuei.Boner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		83B49A4A1E9297A6000077C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				INFOPLIST_FILE = BonerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chriskuei.BonerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uoner.app/Uoner";
+			};
+			name = Debug;
+		};
+		83B49A4B1E9297A6000077C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				INFOPLIST_FILE = BonerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chriskuei.BonerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uoner.app/Uoner";
+			};
+			name = Release;
+		};
+		83B49A4D1E9297A6000077C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				INFOPLIST_FILE = BonerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chriskuei.BonerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Boner;
+			};
+			name = Debug;
+		};
+		83B49A4E1E9297A6000077C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				INFOPLIST_FILE = BonerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.chriskuei.BonerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Boner;
+			};
+			name = Release;
+		};
+		83B49A621E9298CA000077C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Boner Widget/Boner Widget.entitlements";
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Boner Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.chriskuei.Boner.Boner-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83B49A631E9298CA000077C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Boner Widget/Boner Widget.entitlements";
+				DEVELOPMENT_TEAM = RP63UHZLK9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Boner Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.chriskuei.Boner.Boner-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83B49A191E9297A5000077C0 /* Build configuration list for PBXProject "Uoner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B49A441E9297A6000077C0 /* Debug */,
+				83B49A451E9297A6000077C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B49A461E9297A6000077C0 /* Build configuration list for PBXNativeTarget "Uoner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B49A471E9297A6000077C0 /* Debug */,
+				83B49A481E9297A6000077C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B49A491E9297A6000077C0 /* Build configuration list for PBXNativeTarget "UonerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B49A4A1E9297A6000077C0 /* Debug */,
+				83B49A4B1E9297A6000077C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B49A4C1E9297A6000077C0 /* Build configuration list for PBXNativeTarget "UonerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B49A4D1E9297A6000077C0 /* Debug */,
+				83B49A4E1E9297A6000077C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B49A611E9298CA000077C0 /* Build configuration list for PBXNativeTarget "Uoner Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B49A621E9298CA000077C0 /* Debug */,
+				83B49A631E9298CA000077C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83B49A161E9297A5000077C0 /* Project object */;
+}

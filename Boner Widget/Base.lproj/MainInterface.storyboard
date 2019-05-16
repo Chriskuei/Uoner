@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Uoner_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UIK-VU-K2C">
+                                <rect key="frame" x="366" y="125.66666666666669" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onLoginSwitch:" destination="M4Y-Lb-cyx" eventType="valueChanged" id="reN-Ya-5zo"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stw-zw-ZjZ" userLabel="Line">
+                                <rect key="frame" x="34" y="125.66666666666667" width="318" height="0.3333333333333286"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="CWz-Ak-wVc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONNECTIVITY: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itB-Ue-zVZ">
+                                <rect key="frame" x="34" y="134" width="86" height="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFFLINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK0-nc-o6m">
+                                <rect key="frame" x="125" y="134" width="44" height="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1120141755" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6f-9w-vae">
+                                <rect key="frame" x="34" y="77.666666666666671" width="149" height="32"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FK0-nc-o6m" firstAttribute="baseline" secondItem="itB-Ue-zVZ" secondAttribute="baseline" id="40h-za-JWh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UIK-VU-K2C" secondAttribute="trailing" constant="5" id="6o7-Zz-fyQ"/>
+                            <constraint firstItem="stw-zw-ZjZ" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="14" id="HBJ-pd-VTD"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="stw-zw-ZjZ" secondAttribute="bottom" constant="40" id="MHU-gW-g78"/>
+                            <constraint firstItem="UIK-VU-K2C" firstAttribute="top" secondItem="stw-zw-ZjZ" secondAttribute="top" id="Oxw-jF-LJB"/>
+                            <constraint firstItem="itB-Ue-zVZ" firstAttribute="leading" secondItem="stw-zw-ZjZ" secondAttribute="leading" id="Tcz-ve-3ra"/>
+                            <constraint firstItem="FK0-nc-o6m" firstAttribute="leading" secondItem="itB-Ue-zVZ" secondAttribute="trailing" constant="5" id="XTb-bx-OWx"/>
+                            <constraint firstItem="UIK-VU-K2C" firstAttribute="leading" secondItem="stw-zw-ZjZ" secondAttribute="trailing" constant="14" id="czr-j6-GLw"/>
+                            <constraint firstItem="stw-zw-ZjZ" firstAttribute="top" secondItem="a6f-9w-vae" secondAttribute="bottom" constant="16" id="drp-AZ-IlD"/>
+                            <constraint firstItem="itB-Ue-zVZ" firstAttribute="top" secondItem="stw-zw-ZjZ" secondAttribute="bottom" constant="8" id="gde-kv-fpN"/>
+                            <constraint firstItem="a6f-9w-vae" firstAttribute="leading" secondItem="stw-zw-ZjZ" secondAttribute="leading" id="hN5-5z-dFq"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FK0-nc-o6m" secondAttribute="trailing" constant="10" id="jND-g8-Ofq"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a6f-9w-vae" secondAttribute="trailing" constant="10" id="pwZ-sy-dXx"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="440" height="200"/>
+                    <connections>
+                        <outlet property="loginSwitch" destination="UIK-VU-K2C" id="nna-M3-uxV"/>
+                        <outlet property="statusLabel" destination="FK0-nc-o6m" id="33f-eD-Pn0"/>
+                        <outlet property="usernameLabel" destination="a6f-9w-vae" id="PgG-ls-A6Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25.600000000000001" y="35.982008995502248"/>
+        </scene>
+    </scenes>
+</document>
