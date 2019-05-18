@@ -17,6 +17,22 @@
 - Xcode 10.2.1+
 - macOS 10.14+
 
+## Installation
+
+- Install [Carthage](https://github.com/Carthage/Carthage):
+
+```bash
+$ brew install carthage
+```
+
+- Git clone the repository and run:
+
+```bash
+$ carthage update --platform ios
+```
+
+- Click `Uon.xcodeproj` to open the project, and then compile to your device.
+
 ## FAQ
 
 ### What's the origin of the name Uoner?
